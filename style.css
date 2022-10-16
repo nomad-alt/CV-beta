@@ -1,0 +1,387 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+.header {
+    min-height: 40vh;
+    width: 100%;
+    background-image: url(/images/background2.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+nav {
+    display: flex;
+    padding: 2% 3%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav img {
+    width: 300px;
+    border-radius: 50%;
+    transition: 0.5s;
+}
+
+nav img:hover {
+    box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.2);
+}
+
+.nav-links {
+    flex: 1;
+    text-align: right;
+    margin-bottom: auto;
+}
+
+.nav-links ul li {
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+
+.nav-links ul li a {
+    color: #122b36;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.nav-links ul li:visited {
+    color: #f44336;
+    background-color: #8FDDE7;
+}
+.nav-links ul li::after {
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #f44336;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+
+.nav-links ul li:hover::after {
+    width: 100%;
+}
+
+
+.text-box {
+    width: 60%;
+    color: #05445E;
+    position: absolute;
+    top: 40%;
+    left:55%;
+    transform: translate(-33%, -50%);
+    text-align: center;
+    background: #8FDDE7;
+    border-radius: 10px;
+    padding: 20px;
+    margin-top: 40px;
+    transition: 0,5s;
+}
+
+.text-box:hover {
+    box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.2);
+}
+.text-box h1 {
+    font-size: 30px;
+    padding: 1px;
+}
+
+.text-box h2 {
+    font-size: 25px;
+    padding: 1px;
+}
+
+.text-box ul li {
+    font-size: 18px;
+    padding: 2px;
+    list-style: none;
+}
+
+.strength {
+    text-align: center;
+    padding-top: 20px;
+    padding-right: 10px;
+    background-color: #FBE5C8;
+    display: flex;
+    justify-content: space-between;
+}
+
+.strength h1 {
+    font-size: 30px;
+    color: #05445E;
+    padding: 10px;
+    margin-top: 5%;
+}
+
+.strength-list {
+    border-radius: 10px;
+    color: #05445E;
+    font-size: 20px;
+    padding: 20px 12px;
+    margin-bottom: 5%;
+    background-color: #8FDDE7;
+    margin-top: 3%;
+    transition: 0.5s;
+}
+
+.strength-list:hover {
+    box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.2);
+}
+
+.education {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 40px;
+    color: #05445E;
+}
+
+.education h1 {
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+.education-list {
+    flex-basis: 32%;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    position: relative;
+    overflow: hidden;
+}
+
+.education-list img {
+    width: 330px;
+    padding-top: 20px;
+    display: block;
+}
+
+.layer {
+    background: transparent;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: 0.5s;
+}
+.layer:hover{
+    background: rgba(62, 180, 137, 0.8);
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.layer h3 {
+    width: 100%;
+    font-weight: 500;
+    color: #05445E;
+    font-size: 22px;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%);
+    position: absolute;
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.layer:hover h3 {
+    bottom: 50%;
+    opacity: 1;
+}
+
+.jobs-list {
+    flex-basis: 31%;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    text-align: left;
+}
+
+.jobs-list img {
+    width: 300px;
+    border: 10px;
+}
+
+.jobs-list h3 {
+    padding: 0;
+    color: #05445E;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.career h1 {
+    color: #05445E;
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.about-me {
+    background-color: #8FDDE7;
+    text-align: center;
+    padding: 20px;
+}
+
+.about-me h1 {
+    color: #05445E;
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.about-me p {
+    color: #05445E;
+    font-size: 20px;
+}
+
+@media(max-width: 700px) {
+    .text-box {
+        width: 80%;
+        top: 85%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    .text-box h1 {
+        font-size: 30px;
+    }
+    .text-box h2 {
+        font-size: 25px;
+    }
+    .text-box p {
+        font-size: 18px;
+    }
+
+    .nav-links ul li {
+        display: block;
+    }
+    .nav-links {
+        flex-direction: column;
+    }
+
+    nav img {
+        width: 200px;
+    }
+
+    .strength {
+        flex-direction: column;
+        margin-top: 80px;
+    }
+    .education {
+        font-size: 30px;
+    }
+    .row {
+        flex-direction: column;
+    }
+    .jobs-list img {
+        margin-left: 40px;
+    }
+}
+
+/* Projects page */
+
+.sub-header {
+    height: 50vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(57, 119, 160, 0.5),rgba(57, 119, 160, 0.5)),url(images/kimchistan.png);
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    color: #fff;
+}
+
+.sub-header h1 {
+    margin-top: 40px;
+    font-size: 40px;
+    font-weight: 600;
+}
+.sub-header img {
+    width: 100px;
+}
+
+.sub-header ul li {
+    color: #fff;
+}
+
+.project-kimchistan {
+    width: 80%;
+    margin: auto;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.projects {
+    flex-basis: 47%;
+    padding: 20px 5px 10px 20px;
+    text-align: center;
+}
+
+.project-kimchistan img {
+    width: 100%;
+}
+
+.project-kimchistan h1 {
+    padding-top: 0;
+    color: #05445E;
+    font-size: 25px;
+}
+
+.project-kimchistan p {
+    padding: 15px 0 20px;
+    color: #05445E;
+    font-size: 20px;
+}
+
+.project-kimchistan a {
+    border: 1px solid #282d2e;
+    border-radius: 5px;
+    padding: 10px;
+    background-color: #FBE5C8;
+    text-decoration: none;
+}
+
+
+/* Blog page */
+
+.sub-header2 {
+    height: 50vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(57, 119, 160, 0.5),rgba(57, 119, 160, 0.5)),url(images/background1.jpg);
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    color: #fff;
+    padding: 10px;
+}
+
+.sub-header2 h1 {
+    font-size: 40px;
+}
+
+.blog-content {
+    width: 80%;
+    margin: auto;
+    padding: 10px 0;
+    text-align: center;
+}
+.blog-content img {
+    width: 100%;
+    padding: 30px;
+}
+
+.blog-content h1 {
+    padding-top: 0;
+    color: #05445E;
+    font-size: 25px;
+}
+
+.blog-content p {
+    padding: 15px 0 20px;
+    color: #05445E;
+    font-size: 20px;
+}
