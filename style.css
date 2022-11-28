@@ -261,6 +261,8 @@ nav img:hover {
     color: white;
 }
 
+
+
 @media(max-width: 700px) {
 
     li{
@@ -338,41 +340,45 @@ nav img:hover {
     color: #fff;
 }
 
-.project-kimchistan {
+.number-guessing-game {
     width: 80%;
     margin: auto;
     padding-top: 40px;
     padding-bottom: 40px;
 }
 
-.projects {
-    flex-basis: 47%;
+.number-guessing-game {
+    display: flex;
+    flex-direction: column;
     padding: 20px 5px 10px 20px;
     text-align: center;
 }
 
-.project-kimchistan img {
+.number-guessing-game img {
     width: 100%;
+    margin-right: 150px;
+    margin-top: 20px;
 }
 
-.project-kimchistan h1 {
+.number-guessing-game h1 {
     padding-top: 0;
     color: #05445E;
     font-size: 25px;
 }
 
-.project-kimchistan p {
+.number-guessing-game p {
     padding: 15px 0 20px;
     color: #05445E;
     font-size: 20px;
 }
 
-.project-kimchistan a {
+.game-button {
     border: 1px solid #282d2e;
     border-radius: 5px;
     padding: 10px;
     background-color: #FBE5C8;
     text-decoration: none;
+    margin-left: 150px;
 }
 
 
