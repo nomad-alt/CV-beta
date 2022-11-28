@@ -1,0 +1,30 @@
+{
+    "employment": [
+        {
+            "heading": "2011-2015 - Stockholm Arlanda",
+            "text": "Catering truck driver"
+        },
+        {
+            "heading": "2017-2018 - Esoft",
+            "text": "Property photography"
+        },
+        {
+            "heading": "2018-2021 - Mathem",
+            "text": "Photographer"
+        }
+    ],
+    "education": [
+        {
+            "heading": "School nr 37",
+            "text": "High school"
+        },
+        {
+            "heading": "Åsö Gymnasium",
+            "text": "Komvux"
+        },
+        {
+            "heading": "Karolinska Institutet",
+            "text": "Psychology program"
+        }
+    ]
+}

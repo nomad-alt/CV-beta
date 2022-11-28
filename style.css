@@ -13,6 +13,10 @@
     position: relative;
 }
 
+button {
+    padding: 10px;
+    border-radius: 5px;
+}
 nav {
     display: flex;
     padding: 2% 3%;
@@ -41,6 +45,10 @@ nav img:hover {
     display: inline-block;
     padding: 8px 12px;
     position: relative;
+    color: #122b36;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 600;
 }
 
 .nav-links ul li a {
@@ -135,6 +143,14 @@ nav img:hover {
 }
 
 .education {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 40px;
+    color: #05445E;
+}
+
+.career {
     width: 80%;
     margin: auto;
     text-align: center;
@@ -240,7 +256,21 @@ nav img:hover {
     font-size: 20px;
 }
 
+.dark-mode {
+    background-color: black;
+    color: white;
+}
+
 @media(max-width: 700px) {
+
+    li{
+       list-style: none;
+       font-size: 20px;
+    }
+
+    h3 {
+        font-size: 22px;
+    }
     .text-box {
         width: 80%;
         top: 85%;
