@@ -23,20 +23,15 @@ fetch("/json/cv.json")
     });
   });
 
-checkDarkMode();
+const toggle = document.getElementById("toggle");
+const body = document.body;
 
-function enableLightMode() {
-  document.body.classList.remove("dark");
-  localStorage.darkMode = false;
-}
-function enableDarkMode() {
-  document.body.classList.add("dark");
-  localStorage.darkMode = true;
-}
-function checkDarkMode() {
-  if (localStorage.darkMode) {
-    document.body.classList.add("dark");
+toggle.addEventListener("input", (e) => {
+  const isChecked = e.target.checked;
+
+  if (isChecked) {
+    body.classList.add("dark-theme");
   } else {
-    document.body.classList.remove("dark");
+    body.classList.remove("dark-theme");
   }
-}
+});

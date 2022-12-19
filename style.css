@@ -255,12 +255,53 @@ nav img:hover {
   font-size: 20px;
 }
 
-body {
-  transition: 0.182s;
+b.toggle input[type="checkbox"] {
+  display: none;
 }
-body.dark {
-  background-color: #212121;
-  color: #e8e8e8;
+
+.toggle label {
+  background-color: rgb(255, 231, 231);
+  border: 2px solid rgb(201, 181, 181);
+  border-radius: 50px;
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: all ease-in-out 0.3s;
+  width: 100px;
+  height: 50px;
+  margin-bottom: auto;
+}
+
+.toggle label::after {
+  background-color: rgb(54, 50, 50);
+  border-radius: 50%;
+  content: " ";
+  cursor: pointer;
+  display: inline-block;
+  position: absolute;
+  left: 2px;
+  top: 2px;
+  transition: all ease-in-out 0.3s;
+  width: 42px;
+  height: 42px;
+}
+
+.toggle input[type="checkbox"]:checked ~ label {
+  background-color: #000000;
+  border-color: #006dc9;
+}
+
+.toggle input[type="checkbox"]:checked ~ label::after {
+  background-color: #0054b0;
+  transform: translateX(50px);
+}
+
+body {
+  background-color: #f5f7fa;
+}
+
+body.dark-theme {
+  background-color: #333;
 }
 
 @media (max-width: 700px) {
